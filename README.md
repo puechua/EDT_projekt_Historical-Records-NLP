@@ -27,7 +27,7 @@ Kluczowym etapem przetwarzania dokumentów było wyodrębnienie poszczególnych 
 Do analizy struktury zawodowej wykorzystano bibliotekę spaCy. Zawody występujące w aktach w formie narzędnika (np. "mieszczaninem") poddano procesowi lematyzacji, sprowadzając je automatycznie do formy podstawowej ("mieszczanin").
 
 ### 4. Interaktywny Dashboard (Streamlit)
-W celu prezentacji wyników analizy stworzono aplikację webową z wykorzystaniem frameworka Streamlit[cite: 326]. Aplikacja dzieli się na trzy zakładki:
+W celu prezentacji wyników analizy stworzono aplikację webową z wykorzystaniem frameworka Streamlit. Aplikacja dzieli się na trzy zakładki:
 1. **Wykresy i Metryki:** Prezentuje kluczowe wskaźniki (np. podział na płeć) oraz generuje wykresy struktury zawodowej, terytorialnej i dynamiki urodzeń.
 2. **Pełny Raport Liczbowy:** Wyświetla surowe dane statystyczne i zestawienia Pandas.
 3. **Przeglądarka Danych:** Umożliwia dynamiczne filtrowanie bazy po nazwiskach.
