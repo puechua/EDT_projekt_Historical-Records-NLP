@@ -1,21 +1,21 @@
 # 🏛️ Cyfrowy Archiwista: Olkusz 1812 (Text Data Exploration)
 
-Celem projektu było przeprowadzenie pełnego procesu eksploracji danych tekstowych (EDT) na podstawie historycznych aktów urodzenia z Parafii Olkusz z roku 1812[cite: 3]. [cite_start]Projekt przetwarza surowe skany dokumentów z Archiwów Państwowych, wykorzystując techniki rozpoznawania tekstu (OCR), zaawansowane przetwarzanie języka naturalnego (NLP) oraz wizualizację statystyczną[cite: 3, 4].
+Celem projektu było przeprowadzenie pełnego procesu eksploracji danych tekstowych (EDT) na podstawie historycznych aktów urodzenia z Parafii Olkusz z roku 1812. Projekt przetwarza surowe skany dokumentów z Archiwów Państwowych, wykorzystując techniki rozpoznawania tekstu (OCR), zaawansowane przetwarzanie języka naturalnego (NLP) oraz wizualizację statystyczną.
 
-[cite_start]Projekt został zrealizowany przez Aleksandrę Orzech oraz Milanę Lukasiuk w ramach przedmiotu Eksploracja Danych Tekstowych na kierunku Data Science[cite: 1].
+Projekt został zrealizowany przez Aleksandrę Orzech oraz Milanę Lukasiuk w ramach przedmiotu Eksploracja Danych Tekstowych na kierunku Data Science.
 
 ## 🛠️ Technologie i Narzędzia
 * **Język:** Python
-* **Frontend / Interfejs:** Streamlit [cite: 326]
-* **Przetwarzanie Danych:** Pandas, Regex (Wyrażenia regularne) [cite: 119, 339]
-* **NLP:** spaCy (`pl_core_news_sm`) [cite: 108]
-* **Wizualizacja:** Seaborn, Matplotlib [cite: 147]
-* **OCR:** Transkribus (Model: *Transkribus Polish M2*) [cite: 59, 63]
+* **Frontend / Interfejs:** Streamlit
+* **Przetwarzanie Danych:** Pandas, Regex (Wyrażenia regularne)
+* **NLP:** spaCy (`pl_core_news_sm`)
+* **Wizualizacja:** Seaborn, Matplotlib
+* **OCR:** Transkribus (Model: *Transkribus Polish M2*)
 
 ## 🚀 Główne funkcjonalności i etapy projektu
 
 ### 1. Rozpoznawanie tekstu (OCR)
-Surowe skany poddano automatycznej transkrypcji na platformie Transkribus. [cite_start]Zastosowano dedykowany model *Transkribus Polish M2*, specjalizujący się w polskim piśmie ręcznym z okresu XVII-XXI wieku. Model ten osiągnął bardzo wysoką dokładność (CER na poziomie 4.10%).
+Surowe skany poddano automatycznej transkrypcji na platformie Transkribus. Zastosowano dedykowany model *Transkribus Polish M2*, specjalizujący się w polskim piśmie ręcznym z okresu XVII-XXI wieku. Model ten osiągnął bardzo wysoką dokładność (CER na poziomie 4.10%).
 
 ### 2. Zaawansowany Preprocessing i Ekstrakcja Danych (Regex)
 Kluczowym etapem przetwarzania dokumentów było wyodrębnienie poszczególnych rekordów za pomocą wyrażeń regularnych (Regex). 
@@ -24,7 +24,7 @@ Kluczowym etapem przetwarzania dokumentów było wyodrębnienie poszczególnych 
 * Wprowadzono słownik mapujący archaiczne i odmienione formy miejscowości (toponimów) do mianownika.
 
 ### 3. Przetwarzanie Języka Naturalnego (NLP)
-Do analizy struktury zawodowej wykorzystano bibliotekę spaCy[cite: 108]. [cite_start]Zawody występujące w aktach w formie narzędnika (np. "mieszczaninem") poddano procesowi lematyzacji, sprowadzając je automatycznie do formy podstawowej ("mieszczanin").
+Do analizy struktury zawodowej wykorzystano bibliotekę spaCy. Zawody występujące w aktach w formie narzędnika (np. "mieszczaninem") poddano procesowi lematyzacji, sprowadzając je automatycznie do formy podstawowej ("mieszczanin").
 
 ### 4. Interaktywny Dashboard (Streamlit)
 W celu prezentacji wyników analizy stworzono aplikację webową z wykorzystaniem frameworka Streamlit[cite: 326]. Aplikacja dzieli się na trzy zakładki:
